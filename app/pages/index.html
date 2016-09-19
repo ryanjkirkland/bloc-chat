@@ -27,7 +27,10 @@
 	<ui-view></ui-view>
     
 	<!-- Angular -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+
+	<!-- UI Router -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 
 	<!-- Firebase -->
 	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
@@ -36,14 +39,15 @@
 	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
 
 	<script>
-	  // Initialize the Firebase SDK
-	  var config = {
-	    apiKey: '<your-api-key>',
-	    authDomain: '<your-auth-domain>',
-	    databaseURL: '<your-database-url>',
-	    storageBucket: '<your-storage-bucket>'
-	  };
-	  firebase.initializeApp(config);
+  // Initialize Firebase
+  		var config = {
+	    	apiKey: "AIzaSyBB8gS68HUAwaVefTnFFF-YWlMWVkwEnf8",
+		    authDomain: "bloc-chat-127d5.firebaseapp.com",
+		    databaseURL: "https://bloc-chat-127d5.firebaseio.com",
+		    storageBucket: "bloc-chat-127d5.appspot.com",
+		    messagingSenderId: "435984541784"
+		  };
+		firebase.initializeApp(config);
 	</script>
 
     <script src="/scripts/app.js"></script>
