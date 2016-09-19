@@ -1,0 +1,25 @@
+<div class="container">
+	<nav class="navbar">
+		<div class="nav-content-container">
+			<a ui-sref="main" class="logo">Bloc Chat</a>
+			<ul class="rooms-container">
+				<li ng-repeat="room in chatroom.rooms">
+					<a ui-sref="chatroom" class="avail-chat-room">{{ room.name }}</a>
+				</li>
+			</ul>
+			<button>New Chat Room</button>
+		</div>
+	</nav>
+
+	<section class="chatroom-main">
+		<h1 class="room-title">Room 1</h1>
+		
+		<table class="chat-area">
+			<tr class="message-area">
+				<td class="username">Username:</td>
+				<td class="message">I am sample content.</td>
+			</tr>
+		</table>
+	</section>
+
+</div>

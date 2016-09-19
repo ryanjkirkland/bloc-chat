@@ -6,21 +6,32 @@
 
 body {
 	font-family: Helvetica, sans-serif;
-	color: white;
+}
+
+.container {
+	position: relative;
+	padding: 0 0 0 25vw;
+	height: 100vh;
 }
 
 .navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
 	width: 25vw;
-	height: 100vh;
-	background-color: #ddd;
-	padding-top: 30px;
-	padding-left: 30px;
+	background-color: #eee;
+}
+
+.nav-content-container {
+	padding: 25px 0 0 25px;
 }
 
 .navbar a {
 	font-size: 2em;
 	color: #444;
 	font-weight: 500;
+	text-decoration: none;
 }
 
 .rooms-container {

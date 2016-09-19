@@ -1,0 +1,27 @@
+.chatroom-main {
+	width: 75vw;
+	float: right;
+}
+
+.room-title {
+	padding-left: 20px;
+}
+
+.chat-area {
+	width: 100%;
+}
+
+.message-area {
+	background-color: #eee;
+	height: 50px;
+}
+
+.username {
+	width: 20%;
+	padding-left: 10px;
+}
+
+.message {
+	width: 80%;
+	padding-left: 10px;
+}
