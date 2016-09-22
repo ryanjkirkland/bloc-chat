@@ -1,7 +1,7 @@
 (function() {
 	function ChatroomCtrl(Room) {
-		window.foo = Room.all
-		this.rooms = Room.all
+		window.foo = Room.all;
+		this.rooms = Room.all;
 	}
 
 	angular

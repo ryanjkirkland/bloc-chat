@@ -1,4 +1,4 @@
-<div class="container" ng-controller="ChatroomCtrl as chatroom">
+<div class="container">
 	<nav class="navbar">
 		<div class="nav-content-container">
 			<a ui-sref="main" class="logo">Bloc Chat</a>
@@ -7,7 +7,7 @@
 					<a ui-sref="chatroom" class="avail-chat-room">{{ room.name }}</a>
 				</li>
 			</ul>
-			<button>New Chat Room</button>
+			<button ng-click="modal.open()">New Chat Room</button>
 		</div>
 	</nav>
 
