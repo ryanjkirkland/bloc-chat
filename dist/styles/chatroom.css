@@ -17,11 +17,26 @@
 }
 
 .username {
-	width: 20%;
-	padding-left: 10px;
+	font-weight: 800;
 }
 
 .message {
-	width: 80%;
-	padding-left: 10px;
+
+}
+
+.current-user-message {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.current-user-message li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+.date-sent {
+	float: right;
+	font-size: 0.75em;
 }

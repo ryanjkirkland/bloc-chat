@@ -16,9 +16,13 @@
 
 		<section class="col-md-9">
 			<h2>{{ chatroom.activeRoom.name }}</h2>
-				<ul>
-					<li ng-repeat="message in chatroom.messages">{{ message.content }}</li>
-				</ul>
+				<div ng-repeat="message in chatroom.messages">
+					<ul class="current-user-message">
+						<li class="username">{{ message.username }}:</li>
+						<li class="date-sent">{{ message.sentAt }}</li>
+					</ul>
+					<p class="message">{{ message.content }}</p>
+				</div>
 		</section>
 
 	</div>
