@@ -1,8 +1,9 @@
 (function() {
 	function ChatroomCtrl(Room, $uibModal) {
-
+		var $ctrl = this;
 		window.foo = Room.all;
 		this.rooms = Room.all;
+
 
 
 		this.open = function () {
@@ -14,14 +15,14 @@
 			});
 		};
 
-		this.ok = function() {
-			console.log('ok was called')
-			modalInstance.close();
-		};
 
-		this.cancel = function() {
-			console.log('cancel was called')
-			$uibModalInstance.dismiss('cancel');
+
+		this.newChat = function(room) {
+			$ctrl.activeRoom = room;
+			$ctrl.messages = Room.getMessages(room.$id);
+			console.log($ctrl.messages)
+
+
 		};
 
 	}

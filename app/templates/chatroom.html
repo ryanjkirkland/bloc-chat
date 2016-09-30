@@ -1,13 +1,25 @@
 <div class="container">
-	<nav class="navbar">
-		<div class="nav-content-container">
-			<a ui-sref="main" class="logo">Bloc Chat</a>
-			<ul class="rooms-container">
-				<li ng-repeat="room in chatroom.rooms">
-					<a ui-sref="chatroom" class="avail-chat-room">{{ room.name }}</a>
-				</li>
-			</ul>
-			<button ng-click="chatroom.open()">New Chat Room</button>
+	<div class="row">
+		<div class="col-md-3">
+			<nav class="navbar">
+				<div class="nav-content-container">
+					<a class="logo">Bloc Chat</a>
+						<ul class="rooms-container">
+							<li ng-repeat="room in chatroom.rooms">
+								<a ui-sref="chatroom" ng-click="chatroom.newChat(room)" class="avail-chat-room">{{ room.name }}</a>
+							</li>
+						</ul>
+					<button ng-click="chatroom.open()">New Chat Room</button>
+				</div>
+			</nav>
 		</div>
-	</nav>
+
+		<section class="col-md-9">
+			<h2>{{ chatroom.activeRoom.name }}</h2>
+				<ul>
+					<li ng-repeat="message in chatroom.messages">{{ message.content }}</li>
+				</ul>
+		</section>
+
+	</div>
 </div>

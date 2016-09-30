@@ -10,7 +10,7 @@
 
 		this.createRoom = function(){
 			Room.createChatRoom($ctrl.newChatRoom);
-			$ctrl.newChatRoom = {}
+			$ctrl.newChatRoom = {};
 			$uibModalInstance.dismiss('cancel');
 		};
 

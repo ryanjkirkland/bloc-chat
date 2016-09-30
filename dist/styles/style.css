@@ -15,11 +15,7 @@ body {
 }*/
 
 .navbar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 25vw;
+	height: 100vw;
 	background-color: #eee;
 }
 
@@ -54,5 +50,10 @@ body {
 	border: none;
 	background-color: #fff;
 	color: #777;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
 }
 
