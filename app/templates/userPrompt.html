@@ -3,10 +3,11 @@
 	<h3 class="modal-title" id="modal-title">Tell us who you are!</h3>
 </div>
 <div class="modal-body">
-	<p>Anonymity is a crime:</p>
-	<input ng-model=""></input>
+	<p>We don't take kindly to anons:</p>
+	<input ng-model="user.current"></input>
 </div>
 <div class="modal-footer">
-    <button class="btn btn-primary" type="button">OK</button>
+	<p></p>
+    <button class="btn btn-primary" type="button" ng-click="user.userAuth()">OK</button>
 </div>
 </div>

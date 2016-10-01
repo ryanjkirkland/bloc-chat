@@ -3,6 +3,7 @@
 		var ref = firebase.database().ref().child('rooms');
 		var rooms = $firebaseArray(ref);
 		var messageRef = firebase.database().ref().child('messages');
+		var userRef = firebase.database().ref().child('users');
 
 		//Create new chatroom by updating $firebaseArray
 
@@ -16,7 +17,6 @@
 			var currentRoomMessages = messageRef.orderByChild("roomId").equalTo(roomId);
 			return $firebaseArray(currentRoomMessages);
 		};
-
 		
 		return {
 			all: rooms,

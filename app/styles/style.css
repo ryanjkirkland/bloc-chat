@@ -57,12 +57,6 @@ body {
 	padding: 0;
 }
 
-.my-dialog .modal-dialog {
-	width: 400px;
-	height: 400px;
-	margin: 0 auto;
-}
-
 .modal-footer {
 	text-align: center;
 }

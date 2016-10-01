@@ -17,6 +17,12 @@
 				url: '/',
 				controller: 'ModalCtrl as modal',
 				templateUrl: '../templates/modal.html'
+			})
+
+			.state('prompt', {
+				url: '/',
+				controller: 'UserCtrl as prompt',
+				templateUrl: '../templates/userPrompt.html'
 			});
 	}
 
