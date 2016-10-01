@@ -57,3 +57,37 @@ body {
 	padding: 0;
 }
 
+.my-dialog .modal-dialog {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+.modal-footer,
+.modal-body,
+.modal-header,
+.modal-content {
+	background-color: #eee;
+	color: #777;
+}
+
+.modal-content {
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.modal-footer button {
+	background-color: #777;
+	color: #fff;
+	border: none;
+	width: 20%;
+}
+
+.modal-footer button:hover {
+	background-color: #888;
+}
