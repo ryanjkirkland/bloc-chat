@@ -8,8 +8,8 @@
 				templateUrl: '../templates/userPrompt.html',
 				controller: 'UserCtrl',
 				controllerAs: 'user',
-				//backdrop: 'static',
-				//keyboard: false
+				backdrop: 'static',
+				keyboard: false
 			})
 		}
 
