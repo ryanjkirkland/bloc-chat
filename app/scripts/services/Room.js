@@ -11,6 +11,10 @@
 			rooms.$add(room);
 		};
 
+		var createUsername = function(username) {
+			users.$add(username);
+		};
+
 		//Get messages from current room based on roomId
 
 		var getMessages = function(roomId){

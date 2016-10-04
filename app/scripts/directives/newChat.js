@@ -1,5 +1,6 @@
 (function() {
-	function newChat() {
+	function newChat(Message) {
+
 
 
 		return {
@@ -9,11 +10,26 @@
 			scope: { },
 			link: function(scope, element, attributes) {
 
-			}
+			},
+			controller: function(Message, Room, $cookies){
+				var $ctrl = this;
+				this.foo = "bar"
+
+				this.messages = Message.messages
+
+				this.sendMessage = function(room){
+					Message.send({
+						content: $ctrl.newMessage.content,
+						sentAt: Date.now(),
+						username: $cookies.get('blocChatCurrentUser')
+					})
+				}
+			},
+			controllerAs: "newChat"
 		};
 	}
 
 	angular
 		.module('blocChat')
-		.directive('newChat', newChat);
+		.directive('newChat', ['Message', newChat]);
 })();

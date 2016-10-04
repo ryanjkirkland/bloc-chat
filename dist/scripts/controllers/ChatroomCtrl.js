@@ -1,10 +1,7 @@
 (function() {
-	function ChatroomCtrl(Room, $uibModal) {
+	function ChatroomCtrl(Room, Message, $uibModal) {
 		var $ctrl = this;
-		window.foo = Room.all;
 		this.rooms = Room.all;
-
-
 
 		this.open = function () {
 		  	console.log("open() was called")
@@ -20,16 +17,14 @@
 		this.newChat = function(room) {
 			$ctrl.activeRoom = room;
 			$ctrl.messages = Room.getMessages(room.$id);
-			console.log($ctrl.messages)
-
-
+			console.log($ctrl.messages);
 		};
 
 	}
 
 	angular
 		.module('blocChat')
-		.controller('ChatroomCtrl', ['Room','$uibModal',  ChatroomCtrl]);
+		.controller('ChatroomCtrl', ['Room', 'Message', '$uibModal',  ChatroomCtrl]);
 })();
 
 // 1.  Grab a controller
