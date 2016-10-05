@@ -21,11 +21,16 @@
 			var currentRoomMessages = messageRef.orderByChild("roomId").equalTo(roomId);
 			return $firebaseArray(currentRoomMessages);
 		};
+
+		var getRoomId = function(roomId){
+			return roomId;
+		};
 		
 		return {
 			all: rooms,
 			createChatRoom: createChatRoom,
-			getMessages: getMessages
+			getMessages: getMessages,
+			getRoomId: getRoomId
 		};
 	}
 

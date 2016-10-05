@@ -20,6 +20,8 @@
 			console.log($ctrl.messages);
 		};
 
+		this.getId = Room.getRoomId;
+
 	}
 
 	angular
