@@ -13,7 +13,6 @@
 			controller: function(Message, Room, $cookies){
 				var $ctrl = this;
 
-				var currentRoom = Room.getRoomId;
 				this.foo = "bar"
 
 				this.messages = Message.messages

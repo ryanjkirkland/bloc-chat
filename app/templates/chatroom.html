@@ -23,7 +23,12 @@
 					</ul>
 					<p class="message">{{ message.content }}</p>
 				</div>
-				<new-chat></new-chat>
+				<div class="row bottom">
+					<div class="col-md-12">
+						<input class="new-message" placeholder="Send Message..." ng-model="chatroom.newMessage.content"></input>
+						<button class="send-message" ng-click="chatroom.sendMessage()">Send</button>
+					</div>
+				</div>
 		</section>
 
 	</div>
