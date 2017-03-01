@@ -17,7 +17,6 @@
 		this.newChat = function(room) {
 			$ctrl.activeRoom = room;
 			$ctrl.messages = Room.getMessages(room.$id);
-			console.log($ctrl.messages);
 		};
 
 		this.sendMessage = function(room){
@@ -27,7 +26,11 @@
 						username: $cookies.get('blocChatCurrentUser'),
 						roomId: $ctrl.activeRoom.$id
 					})
-				};
+		};
+
+		this.deleteRoom = function(room) {
+			Room.deleteChatRoom(room);
+		};
 
 	}
 
@@ -38,7 +41,5 @@
 
 // 1.  Grab a controller
 // 2.  Install the controller
-// 3.  Install a single state using ui-router 
+// 3.  Install a single state using ui-router
 // 4.  Connect the state to the controller, to a page
-
-

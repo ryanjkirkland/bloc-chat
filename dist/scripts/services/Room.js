@@ -15,6 +15,10 @@
 			users.$add(username);
 		};
 
+		var deleteChatRoom = function(room) {
+			rooms.$remove(room);
+		};
+
 		//Get messages from current room based on roomId
 
 		var getMessages = function(roomId){
@@ -25,7 +29,7 @@
 		var getRoomId = function(roomId){
 			return roomId;
 		};
-		
+
 		return {
 			all: rooms,
 			createChatRoom: createChatRoom,

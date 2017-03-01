@@ -1,7 +1,6 @@
 (function() {
 	function UserCtrl(Room, $cookies, $uibModalInstance) {
 		var $ctrl = this;
-		this.heavy = "balls";
 		var user = Room.users;
 
 		this.userAuth = function() {

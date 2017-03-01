@@ -3,6 +3,7 @@
 		var $ctrl = this;
 
 		this.cancel = function(){
+			console.log("this click registers");
 			$uibModalInstance.dismiss('cancel');
 		};
 

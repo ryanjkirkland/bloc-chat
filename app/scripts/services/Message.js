@@ -5,7 +5,6 @@
 
 		return {
 			send: function(newMessage) {
-				console.log("hitting the service")
 				messages.$add(newMessage);
 			},
 			messages: messages

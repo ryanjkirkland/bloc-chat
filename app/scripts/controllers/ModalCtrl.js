@@ -1,7 +1,6 @@
 (function() {
 	function ModalCtrl(Room, $uibModalInstance) {
 		var $ctrl = this;
-		this.heavy = "balls";
 
 		this.cancel = function(){
 			console.log("this click registers");

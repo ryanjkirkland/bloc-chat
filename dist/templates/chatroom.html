@@ -7,6 +7,7 @@
 						<ul class="rooms-container">
 							<li ng-repeat="room in chatroom.rooms">
 								<a ui-sref="chatroom" ng-click="chatroom.newChat(room)" class="avail-chat-room">{{ room.name }}</a>
+								<button ng-click="chatroom.deleteRoom(room)">Delete Room</button>
 							</li>
 						</ul>
 					<button ng-click="chatroom.open()">New Chat Room</button>

@@ -4,6 +4,7 @@
 		this.rooms = Room.all;
 
 		this.open = function () {
+		  	console.log("open() was called")
 		    var modalInstance = $uibModal.open({
 		      templateUrl: '../templates/modal.html',
 		      controller: "ModalCtrl",
@@ -16,7 +17,6 @@
 		this.newChat = function(room) {
 			$ctrl.activeRoom = room;
 			$ctrl.messages = Room.getMessages(room.$id);
-			console.log($ctrl.messages);
 		};
 
 		this.sendMessage = function(room){
@@ -26,6 +26,10 @@
 						username: $cookies.get('blocChatCurrentUser'),
 						roomId: $ctrl.activeRoom.$id
 					})
+		};
+
+		this.deleteRoom = function(room) {
+			Room.deleteChatRoom(room);
 		};
 
 	}
