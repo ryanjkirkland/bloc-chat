@@ -4,7 +4,6 @@
 		this.rooms = Room.all;
 
 		this.open = function () {
-		  	console.log("open() was called")
 		    var modalInstance = $uibModal.open({
 		      templateUrl: '../templates/modal.html',
 		      controller: "ModalCtrl",
@@ -27,7 +26,7 @@
 						username: $cookies.get('blocChatCurrentUser'),
 						roomId: $ctrl.activeRoom.$id
 					})
-				};
+		};
 
 	}
 
@@ -38,7 +37,5 @@
 
 // 1.  Grab a controller
 // 2.  Install the controller
-// 3.  Install a single state using ui-router 
+// 3.  Install a single state using ui-router
 // 4.  Connect the state to the controller, to a page
-
-
